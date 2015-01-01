@@ -10,7 +10,7 @@
 "use strict";
 
 define(function(require) {
-    
+
     return function(data, strFileName, strMimeType) {
 
         var self = window, // this script is only for browsers anyway...
@@ -59,7 +59,7 @@ define(function(require) {
                     i = 0,
                     uia = new Uint8Array(mx);
 
-            for (i; i < mx; ++i)
+            for (i = 0; i < mx; ++i)
                 uia[i] = bin.charCodeAt(i);
 
             return new B([uia], {type: t});
